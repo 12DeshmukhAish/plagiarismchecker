@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Text Comparison</title>
+  </head>
+  <body>
+    <h1>Text Comparison</h1>
+    <p>Upload a text file to compare with the pre-existing dataset.</p>
+
+    <form method="POST" action="/compare" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".txt" />
+      <button type="submit">Upload</button>
+    </form>
+
+    <hr />
+    
+    <h2>Comparison Result:</h2>
+<p>{{ result }}</p>
+
+  </body>
+</html>
